@@ -12,16 +12,17 @@ def main():
 
     # input
     print("")
-    positive_integer = input("How many times to add: ")
+    times = int(input("How many times to add: "))
+    total = 0
 
     # process and output
     try:
-        positive_integer = int(positive_integer)
-        while loop_counter < positive_integer:
-            loop_counter = loop_counter + 1
-            if positive_integer < 0:
-                continue
-            print(input("Enter a number: "))
+        times == int(times)
+        for loop_counter in range(times):
+            number = int(input("Enter the number:"))
+            total = total + number
+        print("")
+        print("the total is {0}.".format(total))
 
     except Exception:
         print("that was not an integer")
